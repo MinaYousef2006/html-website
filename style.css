@@ -357,7 +357,6 @@ b{
 
 
 @media (max-width: 528px) {
-    /* الهيدر */
     .navbar{
         padding:8px 10px;
 
@@ -377,6 +376,7 @@ b{
 
     .content-text {
         max-width: 100%;
+        margin: 0px 10px;
     }
 
     h1 {
@@ -394,6 +394,7 @@ b{
     .image-container {
         width: 140px;
         height: 140px;
+        margin: 0px 10px;
     }
 
     .item {
@@ -420,5 +421,79 @@ b{
     }
     .social a i {
         font-size: 20px;
+    }
+
+}
+@media (max-width: 360px) {
+    /* Navbar */
+    .navbar {
+        padding: 6px 8px; /* أصغر */
+    }
+
+    nav ul {
+        gap: 5px;
+        font-size: 10px; /* أصغر */
+    }
+
+    /* Header */
+    header {
+        padding-top: 70px; /* أقل من قبل */
+        padding-bottom: 20px;
+    }
+
+    .header-content {
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .content-text {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .im {
+        font-size: 12px;
+    }
+
+    .fe {
+        font-size: 10px;
+    }
+
+    .image-container {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* Skills */
+    .item {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    /* Contact */
+    .social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .social a {
+        width: auto;
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+        gap: 6px;
+        font-size: 12px;
+    }
+
+    .social a i {
+        font-size: 18px;
     }
 }
