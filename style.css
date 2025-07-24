@@ -499,3 +499,85 @@ b{
         font-size: 18px;
     }
 }
+@media (max-width: 390px) {
+    /* Navbar */
+    .navbar {
+        padding: 6px 8px;
+    }
+
+    .navbar .my {
+        font-size: 14px; /* تصغير الخط */
+        white-space: nowrap; /* يمنع الكسر */
+        display: inline-block;
+    }
+
+    nav ul {
+        gap: 4px;
+        font-size: 9px;
+    }
+
+    /* Header */
+    header {
+        padding-top: 70px;
+        padding-bottom: 20px;
+    }
+
+    .header-content {
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .content-text {
+        max-width: 100%;
+        margin: 0 8px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .im {
+        font-size: 12px;
+    }
+
+    .fe {
+        font-size: 10px;
+    }
+
+    .image-container {
+        width: 120px;
+        height: 120px;
+        margin: 0 auto;
+    }
+
+    /* Skills */
+    .item {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    /* Contact */
+    .social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .social a {
+        width: auto;
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+        gap: 6px;
+        text-align: left;
+        font-size: 12px;
+    }
+
+    .social a i {
+        font-size: 18px;
+    }
+}
