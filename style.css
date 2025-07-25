@@ -4,6 +4,7 @@
 }
 html{
     scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
 }
 header{
     background-color:aliceblue;
@@ -196,19 +197,20 @@ b{
     margin: 0 auto;
 }
 .item{
-    background-color: black;
+    background-color: aliceblue;
     padding:20px 20px;
     border-radius: 15px;
     margin: 20px 20px;
     width: 200px;
-    transition: all 0.3 ease;
+    transition: all 0.2s ease;
 }
 .item:hover{
-    box-shadow: 8px 8px 8px rgba(0, 0, 0,0.6);
+    box-shadow: 4px 4px 10px rgb(45, 45, 152);
     transform: scale(1.05);
+    cursor: pointer;
 }
 .skills-content p{
-    color: white;
+    color:rgb(27, 27, 112);
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     padding-top: 10px;
@@ -401,7 +403,13 @@ b{
         width: 100%;
         max-width: 280px;
     }
-
+        .col-2 hr {
+    width: 50%;  
+    margin: 5px auto; 
+    border: none;
+    height: 2px;
+    background-color: gray;
+}
     .social {
         display: flex;
         justify-content: center;
@@ -421,161 +429,10 @@ b{
     }
     .social a i {
         font-size: 20px;
+        margin-bottom: 2px;
     }
 
 }
-@media (max-width: 360px) {
-    /* Navbar */
-    .navbar {
-        padding: 6px 8px; /* أصغر */
-    }
-
-    nav ul {
-        gap: 5px;
-        font-size: 10px; /* أصغر */
-    }
-
-    /* Header */
-    header {
-        padding-top: 70px; /* أقل من قبل */
-        padding-bottom: 20px;
-    }
-
-    .header-content {
-        gap: 10px;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin:0px 10px;
-    }
-
-    .content-text {
-        max-width: 100%;
-    }
-
-    h1 {
-        font-size: 18px;
-    }
-
-    .im {
-        font-size: 12px;
-    }
-
-    .fe {
-        font-size: 10px;
-    }
-
-    .image-container {
-        width: 120px;
-        height: 120px;
-        margin:0px 10px;
-    }
-
-    /* Skills */
-    .item {
-        width: 100%;
-        max-width: 250px;
-    }
-
-    /* Contact */
-    .social {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
-        flex-wrap: wrap;
-    }
-
-    .social a {
-        width: auto;
-        display: flex;
-        flex-direction: row; 
-        align-items: center;
-        gap: 6px;
-        font-size: 12px;
-    }
-
-    .social a i {
-        font-size: 18px;
-    }
-}
-@media (max-width: 390px) {
-    /* Navbar */
-    .navbar {
-        padding: 6px 8px;
-    }
-
-    .navbar .my {
-        font-size: 14px; /* تصغير الخط */
-        white-space: nowrap; /* يمنع الكسر */
-        display: inline-block;
-    }
-
-    nav ul {
-        gap: 4px;
-        font-size: 9px;
-    }
-
-    /* Header */
-    header {
-        padding-top: 70px;
-        padding-bottom: 20px;
-    }
-
-    .header-content {
-        gap: 10px;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .content-text {
-        max-width: 100%;
-        margin: 0 8px;
-    }
-
-    h1 {
-        font-size: 18px;
-    }
-
-    .im {
-        font-size: 12px;
-    }
-
-    .fe {
-        font-size: 10px;
-    }
-
-    .image-container {
-        width: 120px;
-        height: 120px;
-        margin: 0 auto;
-    }
-
-    /* Skills */
-    .item {
-        width: 100%;
-        max-width: 250px;
-    }
-
-    /* Contact */
-    .social {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
-        flex-wrap: wrap;
-    }
-
-    .social a {
-        width: auto;
-        display: flex;
-        flex-direction: row; 
-        align-items: center;
-        gap: 6px;
-        text-align: left;
-        font-size: 12px;
-    }
 @media screen and (max-width: 400px) {
     /* Navbar */
     .navbar {
@@ -587,7 +444,7 @@ b{
         z-index: 1000;
         padding: 8px 10px;
         display: flex;
-        flex-direction: column; /* اللوجو فوق واللينكات تحت */
+        flex-direction: column; 
         align-items: center;
         gap: 5px;
     }
@@ -598,16 +455,16 @@ b{
 
     .navbar .my {
         font-size: 13px;
-        white-space: nowrap; /* ممنوع يكسر */
-        letter-spacing: 0; /* عشان نوفر مساحة */
+        white-space: nowrap; 
+        letter-spacing: 0; 
     }
 
     nav ul {
         display: flex;
-        flex-direction: row; /* نخلي اللينكات جنب بعض بدل عمود */
+        flex-direction: row; 
         gap: 6px;
         font-size: 10px;
-        flex-wrap: wrap; /* لو زادت تنزل تحت */
+        flex-wrap: wrap; 
         justify-content: center;
     }
 
@@ -622,7 +479,7 @@ b{
 
     /* Header */
     header {
-        padding-top: 120px; /* عشان فيه Navbar ثابتة فوق */
+        padding-top: 120px; 
         padding-bottom: 20px;
     }
 
@@ -650,8 +507,8 @@ b{
         height: 120px;
     }
     .col-2 hr {
-    width: 50%;  /* بدل 300px */
-    margin: 5px auto; /* يوسطن الخط */
+    width: 50%;  
+    margin: 5px auto; 
     border: none;
     height: 2px;
     background-color: gray;
@@ -660,29 +517,25 @@ b{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px; /* المسافة بين الأيقونات */
-    flex-wrap: wrap; /* لو الشاشة صغيرة ينزلوا سطرين */
+    gap: 30px; 
+    flex-wrap: wrap; 
 }
 
 .social a {
     display: flex;
-    flex-direction: column; /* الأيقونة فوق النص */
+    flex-direction: column; 
     align-items: center;
     text-decoration: none;
     color: inherit;
-    width: 70px; /* عرض ثابت لكل عنصر */
+    width: 70px; 
     text-align: center;
 }
 
 .social a i {
-    font-size: 28px; /* حجم الأيقونة */
+    font-size: 28px; 
 }
 
 .social a p {
     font-size: 14px;
 }
-}
-    .social a i {
-        font-size: 18px;
-    }
 }
